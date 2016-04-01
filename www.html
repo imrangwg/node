@@ -1,0 +1,570 @@
+<div class="col-md-12">
+    
+    	<!------CONTROL TABS START------>
+		<ul class="nav nav-tabs bordered">
+			<li class="active">
+            	<a href="#list" data-toggle="tab"><i class="entypo-menu"></i> 
+					Class List                    	</a></li>
+            <li>
+                <a href="#add" data-toggle="tab"><i class="entypo-plus-circled"></i>
+                    Add Class                        </a></li>
+         <li> <a href="#addSection" data-toggle="tab"><i class="entypo-plus-circled"></i>
+                    Add Section
+                        </a></li>
+		</ul>
+    	<!------CONTROL TABS END------>
+        
+		<div class="tab-content">
+            <!----TABLE LISTING STARTS-->
+            <div class="tab-pane box active" id="list">
+				
+                <div id="table_export_wrapper" class="dataTables_wrapper form-inline" role="grid"><div class="row"><div class="col-xs-6 col-left"><div id="table_export_length" class="dataTables_length"><label><div class="select2-container" id="s2id_autogen3"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">10</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen4"><div class="select2-drop select2-display-none">   <div class="select2-search select2-search-hidden select2-offscreen">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select size="1" name="table_export_length" aria-controls="table_export" class="select2-offscreen" tabindex="-1"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> per page</label></div></div><div class="col-xs-6 col-right"><div class="dataTables_filter" id="table_export_filter"><label>Search: <input type="text" aria-controls="table_export"></label></div></div></div><table class="table table-bordered datatable dataTable" id="table_export" aria-describedby="table_export_info">
+                	<thead>
+                		<tr role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="table_export" rowspan="1" colspan="1" aria-sort="ascending" aria-label="#: activate to sort column descending" style="width: 67px;"><div>#</div></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="table_export" rowspan="1" colspan="1" aria-label="Class Name: activate to sort column ascending" style="width: 240px;"><div>Class Name</div></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="table_export" rowspan="1" colspan="1" aria-label="Numeric Name: activate to sort column ascending" style="width: 304px;"><div>Numeric Name</div></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="table_export" rowspan="1" colspan="1" aria-label="Teacher Directory: activate to sort column ascending" style="width: 380px;"><div>Teacher Directory</div></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="table_export" rowspan="1" colspan="1" aria-label="Options: activate to sort column ascending" style="width: 235px;"><div>Options</div></th></tr>
+					</thead>
+                    
+                <tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd">
+                            <td class=" sorting_1">1</td>
+							<td class=" ">1st </td>
+							<td class=" ">A</td>
+							<td class=" ">English Teacher 3</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/2');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/2');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="even">
+                            <td class=" sorting_1">2</td>
+							<td class=" ">2nd</td>
+							<td class=" ">A</td>
+							<td class=" ">English Teacher 3</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/3');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/3');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="odd">
+                            <td class=" sorting_1">3</td>
+							<td class=" ">3rd</td>
+							<td class=" ">A</td>
+							<td class=" ">Sandeep Kumar</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/5');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/5');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="even">
+                            <td class=" sorting_1">4</td>
+							<td class=" ">4th </td>
+							<td class=" ">A</td>
+							<td class=" ">Telugu Teacher 1</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/7');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/7');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="odd">
+                            <td class=" sorting_1">5</td>
+							<td class=" ">5th</td>
+							<td class=" ">A</td>
+							<td class=" ">Telugu Teacher 3</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/9');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/9');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="even">
+                            <td class=" sorting_1">6</td>
+							<td class=" ">6th</td>
+							<td class=" ">A</td>
+							<td class=" ">Math Teacher 2</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/11');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/11');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="odd">
+                            <td class=" sorting_1">7</td>
+							<td class=" ">7th</td>
+							<td class=" ">A</td>
+							<td class=" ">Kannada Teacher 1</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/13');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/13');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="even">
+                            <td class=" sorting_1">8</td>
+							<td class=" ">8th</td>
+							<td class=" ">A</td>
+							<td class=" ">Social Teacher 1</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/15');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/15');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="odd">
+                            <td class=" sorting_1">9</td>
+							<td class=" ">9th</td>
+							<td class=" ">A</td>
+							<td class=" ">Science Teacher 1</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/17');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/17');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr><tr class="even">
+                            <td class=" sorting_1">10</td>
+							<td class=" ">10th</td>
+							<td class=" ">A</td>
+							<td class=" ">Computers Teacher 1</td>
+							<td class=" ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                    
+                                    <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/modal_edit_class/19');">
+                                            <i class="entypo-pencil"></i>
+                                                Edit                                            </a>
+                                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="confirm_modal('http://studymonitor.net/dev/index.php?admin/classes/delete/19');">
+                                            <i class="entypo-trash"></i>
+                                                Delete                                            </a>
+                                                    </li>
+                                </ul>
+                            </div>
+        					</td>
+                        </tr></tbody></table><div class="row"><div class="col-xs-6 col-left"><div class="dataTables_info" id="table_export_info">Showing 1 to 10 of 23 entries</div></div><div class="col-xs-6 col-right"><div class="dataTables_paginate paging_bootstrap"><ul class="pagination pagination-sm"><li class="prev disabled"><a href="#"><i class="entypo-left-open"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="entypo-right-open"></i></a></li></ul></div></div></div></div>
+			</div>
+            <!----TABLE LISTING ENDS--->
+            
+            
+			<!----CREATION FORM STARTS---->
+            <div class="tab-pane box" id="add" style="padding: 5px">
+                <div class="box-content">
+                    <form action="http://studymonitor.net/dev/index.php?admin/classes/create" class="form-horizontal form-groups-bordered validate" target="_top" method="post" accept-charset="utf-8" novalidate="novalidate">
+                        <div class="padded">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Name</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="name" data-validate="required" data-message-required="Value Required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Numeric Name</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="name_numeric">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Teacher Directory</label>
+                                <div class="col-sm-5">
+                                    <select name="teacher_id" class="form-control" style="width:100%;">
+                                                                                    <option value="1">Hindi Teacher 2</option>
+                                                                                    <option value="2">Hindi Teacher 1</option>
+                                                                                    <option value="3">English Teacher 3</option>
+                                                                                    <option value="4">English Teacher 2</option>
+                                                                                    <option value="5">Sandeep Kumar</option>
+                                                                                    <option value="6">Hindi Teacher 3</option>
+                                                                                    <option value="7">Telugu Teacher 1</option>
+                                                                                    <option value="8">Telugu Teacher 2</option>
+                                                                                    <option value="9">Telugu Teacher 3</option>
+                                                                                    <option value="10">Math Teacher 1</option>
+                                                                                    <option value="11">Math Teacher 2</option>
+                                                                                    <option value="12">Math Teacher 3</option>
+                                                                                    <option value="13">Kannada Teacher 1</option>
+                                                                                    <option value="14">Kannada Teacher 2</option>
+                                                                                    <option value="15">Social Teacher 1</option>
+                                                                                    <option value="16">Social Teacher 2</option>
+                                                                                    <option value="17">Science Teacher 1</option>
+                                                                                    <option value="18">Science Teacher 2</option>
+                                                                                    <option value="19">Computers Teacher 1</option>
+                                                                                    <option value="20">Computers Teacher 2</option>
+                                                                                    <option value="21">Drill Teacher 1</option>
+                                                                                    <option value="22">Drill Teacher 1</option>
+                                                                                    <option value="23">imran</option>
+                                                                                    <option value="24">Akhil</option>
+                                                                                    <option value="25">sant</option>
+                                                                                    <option value="26">Ram Kumar</option>
+                                                                                    <option value="27">Srinivas Arsid</option>
+                                                                                    <option value="28">madhu eng</option>
+                                                                                    <option value="29">madhu suguna</option>
+                                                                                    <option value="30">test</option>
+                                                                                    <option value="31">test2</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                              <div class="col-sm-offset-3 col-sm-5">
+                                  <button type="submit" class="btn btn-info">Add Class</button>
+                              </div>
+                            </div>
+                    </form>                
+                </div>                
+            </div>
+            <!----CREATION FORM ENDS-->
+
+
+
+
+<!----CREATION FORM STARTS---->
+            <div class="tab-pane box" id="addSection" style="padding: 5px">
+                <div class="box-content">
+                    <hr>
+<a href="javascript:;" onclick="showAjaxModal('http://studymonitor.net/dev/index.php?modal/popup/section_add/');" class="btn btn-primary pull-right">
+        <i class="entypo-plus-circled"></i>
+            Add New Section</a> 
+<br><br><br>
+
+<div class="row">
+    <div class="col-md-12">
+    
+        <div class="tabs-vertical-env">
+        
+            <ul class="nav tabs-vertical">
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/2">
+                        <i class="entypo-dot"></i>
+                        Class 1st                     </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/3">
+                        <i class="entypo-dot"></i>
+                        Class 2nd                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/5">
+                        <i class="entypo-dot"></i>
+                        Class 3rd                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/7">
+                        <i class="entypo-dot"></i>
+                        Class 4th                     </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/9">
+                        <i class="entypo-dot"></i>
+                        Class 5th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/11">
+                        <i class="entypo-dot"></i>
+                        Class 6th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/13">
+                        <i class="entypo-dot"></i>
+                        Class 7th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/15">
+                        <i class="entypo-dot"></i>
+                        Class 8th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/17">
+                        <i class="entypo-dot"></i>
+                        Class 9th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/19">
+                        <i class="entypo-dot"></i>
+                        Class 10th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/28">
+                        <i class="entypo-dot"></i>
+                        Class 12                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/29">
+                        <i class="entypo-dot"></i>
+                        Class 20th                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/30">
+                        <i class="entypo-dot"></i>
+                        Class B.tech E/C                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/31">
+                        <i class="entypo-dot"></i>
+                        Class CSE                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/32">
+                        <i class="entypo-dot"></i>
+                        Class Class EEE                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/33">
+                        <i class="entypo-dot"></i>
+                        Class Class ECE                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/34">
+                        <i class="entypo-dot"></i>
+                        Class Class Mech                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/36">
+                        <i class="entypo-dot"></i>
+                        Class madhu ukg                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/37">
+                        <i class="entypo-dot"></i>
+                        Class LKG                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/38">
+                        <i class="entypo-dot"></i>
+                        Class reema                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/39">
+                        <i class="entypo-dot"></i>
+                        Class PHD                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/40">
+                        <i class="entypo-dot"></i>
+                        Class Photography                    </a>
+                </li>
+                            <li class="">
+                    <a href="http://studymonitor.net/dev/index.php?admin/section/41">
+                        <i class="entypo-dot"></i>
+                        Class mca                    </a>
+                </li>
+                        </ul>
+            
+            <div class="tab-content">
+
+                <div class="tab-pane active">
+                    <table class="table table-bordered responsive">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Section Name</th>
+                                <th>Nick Name</th>
+                                <th>Teacher Directory</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                                                    
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+        </div>  
+    
+    </div>
+</div>
+                </div>                
+            </div>
+            <!----CREATION FORM ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
